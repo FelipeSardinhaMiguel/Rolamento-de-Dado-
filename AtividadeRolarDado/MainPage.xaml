@@ -21,7 +21,7 @@
             <Picker
                 HorizontalOptions="Center"
                 x:Name="NumPicker"
-                Title="Pré Opções">
+                Title="Pré Opções"> 
 
                 <Picker.Items>
                     <x:String>1</x:String>

@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui.Controls.Internals;
+﻿using AtividadeRolarDado.Models;
+using Microsoft.Maui.Controls.Internals;
 
 namespace AtividadeRolarDado
 {
@@ -13,12 +14,14 @@ namespace AtividadeRolarDado
         private void RolarBtn_Clicked(object sender, EventArgs e)
         {
 
-            int lados = Convert.ToInt32(NumPicker.SelectedItem);
+            /*int lados = Convert.ToInt32(NumPicker.SelectedItem);
             int valor;
 
             Random random = new();
-            valor = random.Next(1, lados + 1);
-            ExibirNumeroLabel.Text = Convert.ToString(valor);
+            valor = random.Next(1, lados + 1);*/
+
+            Dado dado = new Dado(67);
+            ExibirNumeroLabel.Text = Convert.ToString(dado.LadoSorteado);
 
         }
     }
