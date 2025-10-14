@@ -14,13 +14,13 @@ namespace AtividadeRolarDado
         private void RolarBtn_Clicked(object sender, EventArgs e)
         {
 
-            /*int lados = Convert.ToInt32(NumPicker.SelectedItem);
-            int valor;
+            int lados = Convert.ToInt32(NumPicker.SelectedItem);
+            //int valor;
+            //Random random = new();
+            //valor = random.Next(1, lados + 1);*/
 
-            Random random = new();
-            valor = random.Next(1, lados + 1);*/
-
-            Dado dado = new Dado(67);
+            Dado dado = new Dado(lados);
+            dado.Rolar();
             ExibirNumeroLabel.Text = Convert.ToString(dado.LadoSorteado);
 
         }
